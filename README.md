@@ -2,6 +2,6 @@
 ## By MinosPotato and Elliatom
 ---
 # Installation:
-'''bash
-git pull 
-'''
+´´´bash
+git pull https://github.com/MinosPotato/2048-python.git
+´´´
