@@ -20,6 +20,26 @@ def fusioniere(bewegung):
 
 	# Code für Rückgabewert ergänzen.	
 
+	if bewegung == "right":
+		for i in range (len(feld)-1, -1, -1):
+			currentThingThatsBeingLookedAt = feld[i]
+			currentThingThatsBeingLookedAtNeighbour = feld[i+1]
+			if feld[i] == -1:
+				break
+			elif currentThingThatsBeingLookedAt == currentThingThatsBeingLookedAtNeighbour:
+				feld[i+1] = 2*feld[i]
+				feld[i] = 0
+	
+	if bewegung == "left":
+		for i in range (len(feld)-1, -1, -1):
+			currentThingThatsBeingLookedAt = feld[i]
+			currentThingThatsBeingLookedAtNeighbour = feld[i-1]
+			if feld[i] == -1:
+				break
+			elif currentThingThatsBeingLookedAt == currentThingThatsBeingLookedAtNeighbour:
+				feld[i-1] = 2*feld[i]
+				feld[i] = 0
+              
 
 # Test 1:
 print('\n Test 1\n')
