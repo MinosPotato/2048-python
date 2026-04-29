@@ -3,7 +3,7 @@ breite = 10
 
 def verschiebe(bewegung):
 	global feld
-	for i in len(feld):
+	for i in range(len(feld)):
 		if bewegung == "right":
 			if feld[i] == 0:
 				feld.pop[i]
