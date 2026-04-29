@@ -6,11 +6,11 @@ def verschiebe(bewegung):
 	for i in range(len(feld)):
 		if bewegung == "right":
 			if feld[i] == 0:
-				feld.pop[i]
+				feld.pop(i)
 				feld.insert(0, 0)
 		if bewegung == "left":
 			if feld[i] == 0:
-				feld.pop[i]
+				feld.pop(i)
 				feld.insert(-2,0)
 
 
@@ -27,7 +27,7 @@ def fusioniere(bewegung):
 	# Code für Rückgabewert ergänzen.	
 
 	if bewegung == "right":
-		for i in range (len(feld)-1, -1, -1):
+		for i in range(len(feld)-1):
 			currentThingThatsBeingLookedAt = feld[i]
 			currentThingThatsBeingLookedAtNeighbour = feld[i+1]
 			if feld[i] == -1:
@@ -37,7 +37,7 @@ def fusioniere(bewegung):
 				feld[i] = 0
 	
 	if bewegung == "left":
-		for i in range (len(feld)-1, -1, -1):
+		for i in range(len(feld)-1, -1, -1):
 			currentThingThatsBeingLookedAt = feld[i]
 			currentThingThatsBeingLookedAtNeighbour = feld[i-1]
 			if feld[i] == -1:
@@ -45,8 +45,6 @@ def fusioniere(bewegung):
 			elif currentThingThatsBeingLookedAt == currentThingThatsBeingLookedAtNeighbour:
 				feld[i-1] = 2*feld[i]
 				feld[i] = 0
-              
-
 # Test 1:
 print('\n Test 1\n')
 feld = [2, 0, 2, 0, 2, 0, 2, 0, 2, 0, -1]
