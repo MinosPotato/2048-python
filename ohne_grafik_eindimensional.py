@@ -1,4 +1,3 @@
-# Anzahl Quadrate in x-Richtung
 breite = 10
 
 def verschiebe(bewegung):
@@ -17,14 +16,7 @@ def verschiebe(bewegung):
 def fusioniere(bewegung):
 	global feld
 	# Fusioniert jeweils zwei direkt nebeneinanderliegende Steine derselben Beschriftung.
-	# Die Fusion geschieht in der Bewegungsrichtung.
-
-	# Code zu ergänzen.	
-
-	# Beim späteren Verwenden dieser Funktion in der pygame-Version sollte der Rückgabewert 
-	# True sein, wenn Fusionen stattgefunden haben, sonst False.
-
-	# Code für Rückgabewert ergänzen.	
+	# Die Fusion geschieht in der Bewegungsrichtung.	
 
 	if bewegung == "right":
 		for i in range(len(feld)-1):
@@ -48,10 +40,6 @@ def fusioniere(bewegung):
 # Test 1:
 print('\n Test 1\n')
 feld = [2, 0, 2, 0, 2, 0, 2, 0, 2, 0, -1]
-# Bemerkung: Diese Variable speichert eine Zeile aus 10 Feldern im Spiel 2028.
-# Die eigentlichen Einträge stehen an den Positionen 0 bis 9.
-# Die beiden "Dummy-Einträge" -1 an den Positionen -1 und 10 markieren den linken bzw. rechten Rand.
-# Mit ihrer Hilfe lässt sich bisweilen der Zugriff auf nicht existente Positionen der Liste elegant vermeiden.
 
 print(feld)
 
