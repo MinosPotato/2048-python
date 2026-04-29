@@ -1,3 +1,7 @@
 # 2048
-
-By MinosPotato and Elliatom
+## By MinosPotato and Elliatom
+---
+# Installation:
+'''bash
+git pull 
+'''
