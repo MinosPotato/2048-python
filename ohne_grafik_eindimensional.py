@@ -2,10 +2,16 @@
 breite = 10
 
 def verschiebe(bewegung):
-    global feld
-    for i in range(len(feld)):
-        if bewegung == "right":
-            if feld[i] == feld[i+1]
+	global feld
+	for i in len(feld):
+		if bewegung == "right":
+			if feld[i] == 0:
+				feld.pop[i]
+				feld.insert(0, 0)
+		if bewegung == "left":
+			if feld[i] == 0:
+				feld.pop[i]
+				feld.insert(-2,0)
 
 
 def fusioniere(bewegung):
