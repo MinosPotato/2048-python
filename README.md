@@ -13,3 +13,5 @@ python ohne_grafik_eindimensional.py
 ```
 
 # Dependencies
+* python
+* nothing else yet...
